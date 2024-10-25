@@ -2,7 +2,7 @@ function highlightText() {
   const body = DocumentApp.getActiveDocument().getBody();
 
   // Regular expression to match standalone English words or specific standalone Bengali words
-  const regex = /\b[a-zA-Z]+\b|(?<!\S)(এ|এর|টা|টি|তে)(?!\S)/g;
+  const regex = /\b[a-zA-Z]+\b|(?<!\S)(এ|এর|টা|টি|তে|গুলো.গুলি)(?!\S)/g;
 
   // Loop through all paragraphs in the document
   const paragraphs = body.getParagraphs();
